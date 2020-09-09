@@ -57,6 +57,11 @@ export default () => {
         Direitos de imagem para Netflix<br/>
         Dados pegos da API do site Themoviedb.org
       </footer>
+      {movieList.length <= 0 &&
+        <div className="loading">
+          <img src="https://cdn.lowgif.com/small/0534e2a412eeb281-the-counterintuitive-tech-behind-netflix-s-worldwide.gif" alt="Carregando"/>
+        </div>
+      }
     </div>
   );
 }
